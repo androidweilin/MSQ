@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <!-- popupWindow动画 -->
+    <style name="PopupWindow">
+    <item name="android:windowEnterAnimation">@anim/popupwindow_anim_in</item>
+    <item name="android:windowExitAnimation">@anim/popupwindow_anim_out</item>
+    </style>
+    <!-- 自定义Dialog -->
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:background">@drawable/custom_dialog</item><!--dialog背景样式-->
+        <item name="android:windowBackground">@android:color/transparent</item><!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+    </style>
+    <!-- progressDialog -->
+    <style name="progressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:background">@drawable/progress_dialog</item><!--dialog背景样式-->
+        <item name="android:windowBackground">@android:color/transparent</item><!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+    </style>
+
+    <style name="CustomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/custom_rating_bar_drawable</item>
+        <item name="android:maxHeight">50dp</item>
+        <item name="android:minHeight">30dp</item>
+    </style>
+</resources>

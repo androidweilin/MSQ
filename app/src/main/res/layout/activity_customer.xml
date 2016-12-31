@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/custom_action_bar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base1dp"
+        android:background="@color/brown_light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base15dp"
+            android:text="客服电话:"
+            android:textSize="@dimen/base18sp"/>
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base30dp"
+            android:text="010-67331288"
+            android:textSize="@dimen/base18sp"/>
+
+        <View
+            android:layout_width="@dimen/base10dp"
+            android:layout_height="@dimen/base1dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/call_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_call"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base50dp"
+        android:layout_marginTop="@dimen/base1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base15dp"
+            android:text="客服 Q  Q:"
+            android:textSize="@dimen/base18sp"/>
+
+        <TextView
+            android:id="@+id/tv_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base30dp"
+            android:text="31585779"
+            android:textSize="@dimen/base18sp"/>
+
+        <View
+            android:layout_width="@dimen/base10dp"
+            android:layout_height="@dimen/base1dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/copy_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_copy"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base50dp"
+        android:layout_marginTop="@dimen/base1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base15dp"
+            android:text="移动客服:"
+            android:textSize="@dimen/base18sp"/>
+
+        <TextView
+            android:id="@+id/tv_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base30dp"
+            android:text="13910511586"
+            android:textSize="@dimen/base18sp"/>
+
+        <View
+            android:layout_width="@dimen/base10dp"
+            android:layout_height="@dimen/base1dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/call_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_call"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base50dp"
+        android:layout_marginTop="@dimen/base1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base15dp"
+            android:text="客服微信:"
+            android:textSize="@dimen/base18sp"/>
+
+        <TextView
+            android:id="@+id/tv_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base30dp"
+            android:text="13910511586"
+            android:textSize="@dimen/base18sp"/>
+
+        <View
+            android:layout_width="@dimen/base10dp"
+            android:layout_height="@dimen/base1dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/copy_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_copy"/>
+    </LinearLayout>
+
+
+</LinearLayout>

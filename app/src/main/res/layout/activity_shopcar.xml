@@ -1,0 +1,97 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/custom_action_bar"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base1dp"
+        android:layout_below="@id/title_bar"
+        android:background="@color/brown_light"/>
+
+    <ListView
+        android:id="@+id/pay_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_pay"
+        android:layout_below="@id/line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_pay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <CheckBox
+            android:id="@+id/all_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base15dp"
+            android:paddingTop="@dimen/base10dp"
+            android:paddingBottom="@dimen/base10dp"
+            android:paddingRight="@dimen/base10dp"
+            android:button="@drawable/checkbox_selector"
+            android:checked="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base5dp"
+            android:text="全选"
+            android:textColor="#333333"
+            android:textSize="@dimen/base18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base15dp"
+            android:text="合计:"
+            android:textColor="#404040"
+            android:textSize="@dimen/base14sp"/>
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base5dp"
+            android:text="0.0"
+            android:textColor="#e30006"
+            android:textSize="@dimen/base18sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="不含运费"
+            android:textColor="#999999"
+            android:textSize="@dimen/base14sp"/>
+
+        <TextView
+            android:id="@+id/confirm_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="#999999"
+            android:gravity="center_vertical"
+            android:padding="@dimen/base15dp"
+            android:text="结算(0)"
+            android:enabled="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base16sp"/>
+
+    </LinearLayout>
+</RelativeLayout>

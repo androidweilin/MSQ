@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base300dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base100dp"
+            android:layout_marginLeft="@dimen/base20dp"
+            android:layout_marginRight="@dimen/base20dp"
+            android:layout_marginTop="@dimen/base20dp">
+
+            <ImageView
+                android:id="@+id/popIcon"
+                android:layout_width="@dimen/base100dp"
+                android:layout_height="@dimen/base100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/msq_logo"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/base5dp"
+                android:layout_marginLeft="@dimen/base20dp"
+                android:layout_marginTop="@dimen/base5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/popTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商品标题商品标题商品标题商品标题商品标题商品标题"
+                    android:textSize="@dimen/base18sp"/>
+
+                <View
+                    android:layout_width="@dimen/base1dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/popPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/base20dp"
+                    android:text="￥168"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/base20sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/base1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base1dp"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/base20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/base20dp"
+                android:text="购买数量"
+                android:textSize="@dimen/base18sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/base1dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/popSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/car_sub"/>
+
+            <TextView
+                android:id="@+id/popCount"
+                android:layout_width="@dimen/base75dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/base10dp"
+                android:layout_marginRight="@dimen/base10dp"
+                android:background="#eeeeee"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="#404040"
+                android:textSize="@dimen/base20sp"/>
+
+            <ImageView
+                android:id="@+id/popAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/car_add"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base1dp"
+            android:background="@color/gray"/>
+
+        <View
+            android:layout_width="@dimen/base1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/popConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base45dp"
+            android:background="@color/brown"
+            android:gravity="center"
+            android:text="确 定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base20sp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/custom_action_bar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base1dp"
+        android:background="@color/brown_light"/>
+
+    <EditText
+        android:id="@+id/et_theme"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base40dp"
+        android:layout_marginLeft="@dimen/base20dp"
+        android:layout_marginRight="@dimen/base20dp"
+        android:layout_marginTop="@dimen/base15dp"
+        android:background="@drawable/feedback_bg"
+        android:hint="请输入您要建议反馈的主题"
+        android:padding="@dimen/base10dp"
+        android:textSize="@dimen/base16sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base300dp"
+        android:layout_marginLeft="@dimen/base20dp"
+        android:layout_marginRight="@dimen/base20dp"
+        android:layout_marginTop="@dimen/base10dp"
+        android:background="@drawable/feedback_bg">
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入您要建议反馈的内容"
+            android:padding="@dimen/base10dp"
+            android:textSize="@dimen/base16sp"/>
+
+        <TextView
+            android:id="@+id/tv_pointer"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/base40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/base15dp"
+            android:gravity="center"
+            android:text="0/250"
+            android:textColor="#999999"
+            android:textSize="@dimen/base16sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/base1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base50dp"
+        android:background="@color/brown"
+        android:gravity="center"
+        android:text="我要反馈"
+        android:textColor="@color/white"
+        android:textSize="@dimen/base20sp"/>
+</LinearLayout>

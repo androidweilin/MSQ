@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/custom_action_bar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base1dp"
+        android:background="@color/brown_light"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/base10dp"
+        android:background="@drawable/feedback_bg"
+        android:padding="@dimen/base10dp">
+
+        <TextView
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/base10dp"
+            android:text="所有解释权归玛沙琪所有，少年洗洗睡吧!"
+            android:textSize="@dimen/base16sp"/>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/custom_action_bar"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base1dp"
+        android:layout_below="@id/title"
+        android:background="@color/brown_light"/>
+
+
+    <ListView
+        android:id="@+id/assess_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/assess_submit"
+        android:layout_below="@id/line"
+        android:scrollbars="none"/>
+
+
+    <TextView
+        android:id="@+id/assess_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/brown"
+        android:gravity="center"
+        android:text="提交评论"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

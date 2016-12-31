@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/custom_action_bar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base1dp"
+        android:background="@color/brown_light"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/base80dp"
+        android:src="@drawable/msq_logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/base25dp"
+        android:text="某某有限公司旗下品牌"
+        android:textColor="#404040"
+        android:textSize="@dimen/base16sp"/>
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/base15dp"
+        android:text="玛沙琪 Android1.0 版本"
+        android:textColor="#909090"
+        android:textSize="@dimen/base14sp"/>
+</LinearLayout>

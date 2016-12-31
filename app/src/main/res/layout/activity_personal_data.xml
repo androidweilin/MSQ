@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/custom_action_bar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base1dp"
+        android:background="@color/brown_light"/>
+
+    <LinearLayout
+        android:id="@+id/ll_user_hand"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base15dp"
+            android:text="头像"
+            android:textSize="@dimen/base18sp"/>
+
+        <View
+            android:layout_width="@dimen/base10dp"
+            android:layout_height="@dimen/base1dp"
+            android:layout_weight="1"/>
+
+        <com.wkbp.msq.customView.CircleImageView
+            android:id="@+id/user_head"
+            android:layout_width="@dimen/base40dp"
+            android:layout_height="@dimen/base40dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_head"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base15dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_right_gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base50dp"
+        android:layout_marginTop="@dimen/base1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base15dp"
+            android:text="用户名"
+            android:textSize="@dimen/base18sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_userName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/base30dp"
+            android:gravity="right|center_vertical"
+            android:text="用户名"
+            android:textColor="#999999"
+            android:textSize="@dimen/base16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_nickName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base50dp"
+        android:layout_marginTop="@dimen/base1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base15dp"
+            android:text="昵称"
+            android:textSize="@dimen/base18sp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/base1dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_nickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/base15dp"
+            android:text="昵称"
+            android:textSize="@dimen/base16sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_right_gray"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/base1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base50dp"
+        android:background="@color/brown"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="@dimen/base20sp"/>
+
+</LinearLayout>

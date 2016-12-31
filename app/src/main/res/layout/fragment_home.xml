@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <com.wkbp.msq.swipe.SwipeRefreshLayoutUpDown
+        android:id="@+id/home_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/base5dp"
+        android:background="@color/white">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/list_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/banner_frameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/banner">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/banner_Pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <LinearLayout
+                        android:id="@+id/dotLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:orientation="horizontal"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/base20dp"
+                    android:paddingTop="@dimen/base10dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_mashaqi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base20dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/home_mashaqi"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/base5dp"
+                            android:text="玛沙琪"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/base16sp"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/base1dp"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_gusha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/home_gusha"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/base5dp"
+                            android:text="古沙"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/base16sp"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/base1dp"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_mucun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/base20dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/home_mucun"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/base5dp"
+                            android:text="木村拓哉"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/base16sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base1dp"
+                    android:background="@color/brown_light"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/base1dp"
+                        android:layout_weight="1"/>
+
+                    <View
+                        android:layout_width="30dp"
+                        android:layout_height="@dimen/base1dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/brown"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/base20dp"
+                        android:text="新品推荐"
+                        android:textColor="@color/brown"
+                        android:textSize="@dimen/base18sp"/>
+
+                    <View
+                        android:layout_width="30dp"
+                        android:layout_height="@dimen/base1dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/brown"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/base1dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base1dp"
+                    android:background="@color/brown_light"/>
+
+                <com.wkbp.msq.customView.GridViewForScrollView
+                    android:id="@+id/gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:horizontalSpacing="@dimen/base20dp"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="2"
+                    android:paddingBottom="@dimen/base20dp"
+                    android:paddingLeft="@dimen/base20dp"
+                    android:paddingRight="@dimen/base20dp"
+                    android:paddingTop="@dimen/base20dp"
+                    android:scrollbars="none"
+                    android:verticalSpacing="@dimen/base20dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </com.wkbp.msq.swipe.SwipeRefreshLayoutUpDown>
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/base30dp"
+        android:background="@drawable/search_bg"
+        android:baselineAligned="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="3dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_search"/>
+
+        <EditText
+            android:id="@+id/serach_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:imeOptions="actionSearch"
+            android:hint="搜索您需要的品牌"
+            android:padding="@dimen/base5dp"
+            android:singleLine="true"
+
+            android:textColor="@color/brown"
+            android:textColorHint="@color/brown_light"
+            android:textCursorDrawable="@null"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

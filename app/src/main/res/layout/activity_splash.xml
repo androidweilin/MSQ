@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="@dimen/base100dp"
+        android:layout_height="@dimen/base100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base100dp"
+        android:src="@drawable/msq_logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base10dp"
+        android:text="玛沙琪"
+        android:textColor="@color/brown"
+        android:textSize="@dimen/base20sp"
+        android:id="@+id/textView"/>
+
+    <LinearLayout
+        android:id="@+id/ll_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/base40dp"
+        android:layout_marginRight="@dimen/base30dp"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/base10dp"
+        android:paddingLeft="@dimen/base5dp"
+        android:paddingRight="@dimen/base5dp"
+        android:paddingTop="@dimen/base10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跳过"
+            android:textColor="@color/brown"
+            android:textSize="@dimen/base16sp"/>
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base5dp"
+            android:layout_marginRight="@dimen/base5dp"
+            android:text="3"
+            android:textColor="@color/brown"
+            android:textSize="@dimen/base18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="秒"
+            android:textColor="@color/brown"
+            android:textSize="@dimen/base16sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

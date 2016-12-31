@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/custom_action_bar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base1dp"
+        android:background="@color/brown_light"/>
+
+    <LinearLayout
+        android:id="@+id/ll_user_data"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base15dp"
+            android:text="个人资料"
+            android:textSize="@dimen/base18sp"/>
+
+        <View
+            android:layout_width="@dimen/base10dp"
+            android:layout_height="@dimen/base1dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_right_gray"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_change_pawd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base50dp"
+        android:layout_marginTop="@dimen/base1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base15dp"
+            android:text="修改密码"
+            android:textSize="@dimen/base18sp"/>
+
+        <View
+            android:layout_width="@dimen/base10dp"
+            android:layout_height="@dimen/base1dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_right_gray"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_address_manage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base50dp"
+        android:layout_marginTop="@dimen/base1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base15dp"
+            android:text="地址管理"
+            android:textSize="@dimen/base18sp"/>
+
+        <View
+            android:layout_width="@dimen/base10dp"
+            android:layout_height="@dimen/base1dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_right_gray"/>
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="@dimen/base1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base50dp"
+        android:background="@color/brown"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/base20sp"/>
+
+</LinearLayout>

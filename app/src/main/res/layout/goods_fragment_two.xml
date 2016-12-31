@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/id_goods_buy_detail_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+    
+    <TextView 
+        android:id="@+id/id_goods_buy_detail_list_empty"
+        android:text="没有评论哦"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

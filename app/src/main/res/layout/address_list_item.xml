@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base10dp"
+        android:background="#eeeeee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/address_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/base15dp"
+            android:src="@drawable/address_unselecte"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base15dp"
+            android:layout_marginTop="@dimen/base15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收件人:"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/base15sp"/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base5dp"
+                    android:text="王二小"
+                    android:textColor="#404040"
+                    android:textSize="@dimen/base15sp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/base1dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/base5dp"
+                    android:text="13811234000"
+                    android:textColor="@color/c_404040"
+                    android:textSize="@dimen/base12sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rl_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收货地址:"
+                    android:textColor="@color/c_404040"
+                    android:textSize="@dimen/base15sp"/>
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base5dp"
+                    android:text="地址址址址址址址址址址址址址址址址址址址址址址址址址"
+                    android:textColor="@color/c_404040"
+                    android:textSize="@dimen/base15sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/address_editor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/base15dp"
+            android:src="@drawable/address_edit"/>
+    </LinearLayout>
+
+
+</LinearLayout>

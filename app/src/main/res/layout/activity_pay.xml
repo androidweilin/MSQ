@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/custom_action_bar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base1dp"
+        android:background="@color/brown_light"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base10dp"
+        android:layout_marginRight="@dimen/base10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/pay_wechat"
+                android:layout_width="@dimen/base100dp"
+                android:layout_height="@dimen/base100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/base30dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_wechat"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="长按微信二维码保存"
+                android:textColor="#999999"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base10dp"
+                android:text="微信二维码支付提示（请先仔细阅读后再向我付款）："
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="一.货款金额5万元以内使用扫描微信二维码方式向我付款，货款金额5万元以上使用银行卡转账方式付款（银行卡账户信息详见支付提示第三条）。"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="二.扫描微信二维码付款操作方式：长按二维码保存至相册 — 打开微信 — 点击微信中扫一扫按钮 — 点击此页面右上角相册文字 — 在相册中选择保存的二维码图片 — 点击完成按钮 — 输入货款金额向我付款。"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="三.银行卡账户信息："/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base10dp"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="1.建设银行：4367 4200 1130 0306469"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base20dp"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="户       名：何谢敏"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base10dp"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="2.工商银行：6222 0002 0010 6255151"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base20dp"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="户       名：何谢敏"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base20dp"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="开  户  行：北京市朝阳区九龙山山水文园支行"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="四.咨询客服电话："/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base20dp"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="010-67331288"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base20dp"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="13910511586"/>
+
+            <ImageView
+                android:id="@+id/pay_alipay"
+                android:layout_width="@dimen/base100dp"
+                android:layout_height="@dimen/base100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/base50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_alipay"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="长按支付宝二维码保存"
+                android:textColor="#999999"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base10dp"
+                android:text="支付宝支付提示（请先仔细阅读后再向我付款）："
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="一.货款金额5万元以内使用扫描支付宝二维码方式向我付款，货款金额5万元以上使用银行卡转账方式付款（银行卡账户信息详见支付提示第三条）。"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="二.扫描支付宝二维码付款操作方式：长按二维码保存至相册 — 打开支付宝 — 点击支付宝中的扫一扫按钮 — 点击此页面中上部相册按钮 — 在相册中选择保存的二维码图片 — 输入货款金额向我付款。"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="三.银行卡账户信息："/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base10dp"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="1.建设银行：4367 4200 1130 0306469"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base20dp"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="户       名：何谢敏"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base10dp"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="2.工商银行：6222 0002 0010 6255151"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base20dp"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="户       名：何谢敏"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base20dp"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="开  户  行：北京市朝阳区九龙山山水文园支行"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="四.咨询客服电话："/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base20dp"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="010-67331288"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base20dp"
+                android:layout_marginTop="@dimen/base5dp"
+                android:text="13910511586"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/base10dp"
+                android:gravity="center_horizontal"
+                android:text="注:二维码保存在文件管理-mashaqi/pay/文件夹中(相册的pay文件中)"
+                android:textColor="#999999"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
